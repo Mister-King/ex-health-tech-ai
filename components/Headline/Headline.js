@@ -8,12 +8,12 @@ import { Text } from 'react-native';
 import styles from './_headline.scss';
 
 const Headline = props => {
+    let classNames = [styles.headline];
+    props.type  && classNames.push(styles[`headline--${props.type}`]);
+    props.style && classNames.push(props.style);
+
     return (
-        <Text className={`
-            ${styles.headline}
-            ${props.type ? styles['headline--' + props.type] : null}
-            ${props.style}
-        `}>
+        <Text className={classNames}>
             {props.children}
         </Text>
     );
