@@ -1,0 +1,22 @@
+/**
+ * Variables
+ */
+
+$colours: (
+		'white': #ffffff,
+		'content': #19191f,
+		'background': #eaedef,
+		'shade': #cbd3d9,
+
+		'copy': #19191f,
+		'highlight': #d2d282,
+);
+
+$mobile: max-width 500px, 'no-query', true;
+$tablet: 768px, 'no-query' true;
+$desktop: 1024px, 'no-query' true;
+$wide: 1400px, 'no-query' true;
+$wider: 1921px, 'no-query', true;
+$massive: 3070px, 'no-query', true;
+
+$transition: 0.1s ease-in-out;

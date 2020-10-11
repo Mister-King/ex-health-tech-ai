@@ -1,0 +1,17 @@
+/**
+ * Post Comment
+ */
+
+@import '../../variables';
+
+.comment {
+	background: map-get($colours, 'background');
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+
+	&__name {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}

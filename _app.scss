@@ -1,0 +1,9 @@
+/**
+ * General App Styles
+ */
+
+@import './components/variables';
+
+.nav-header {
+	background: map-get($colours, 'background');
+}

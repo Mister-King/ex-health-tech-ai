@@ -1,0 +1,9 @@
+/**
+ * Error
+ */
+
+@import '../variables';
+
+.error {
+	color: map-get($colours, 'error');
+}

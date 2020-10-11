@@ -1,0 +1,25 @@
+/**
+ * Screen
+ */
+
+@import '../variables';
+
+.screen {
+	background: map-get($colours, 'white');
+	height: 100%;
+	width: 100%;
+
+	&--full {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__view {
+		padding: 0 20px;
+
+		&--trim {
+			padding: 0;
+		}
+	}
+}
