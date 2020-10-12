@@ -14,22 +14,33 @@ The detail screen for the selected post
 - Post comments (cells with their names and bodies)
 
 ## Dependencies
-`react-native` installed.  
-XCode and iOS Simulator installed.
+[react-native](https://www.npmjs.com/package/react-native)    
+[Cocoapods](https://cocoapods.org)  
+[XCode](https://apps.apple.com/gb/app/xcode/id497799835) and iOS Simulator installed.
 
 ## Setup
-In a terminal run:  
+
+#### Installation
+From a terminal in the project folder run:  
 ```
 npm ci
-npm run start
+cd ios
+pod install
 ```
 
-To run with a clear cache, use:
+#### Running
+From a terminal in the project folder run:
 ```
-npx react-native start --reset-cache
+npm run start
 ```
 
 To run on iOS Simulator, in a separate terminal tab run:
 ```
-npx react-native run-ios
+npm run ios
+```
+
+#### Cache Clearing
+Instead of `npm run start`, use:
+```
+npx react-native start --reset-cache
 ```
