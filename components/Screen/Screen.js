@@ -14,7 +14,7 @@ const Screen = props => {
 
     return (
         <>
-            <StatusBar />
+            <StatusBar barStyle="dark-content"/>
             <View className={classNames}>
                 {props.scrollable ? (
                     <ScrollView>{props.children}</ScrollView>
