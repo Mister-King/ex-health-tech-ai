@@ -1,0 +1,9 @@
+/**
+ * Navigator
+ */
+
+@import '../variables';
+
+.header {
+	background: map-get($colours, 'background');
+}

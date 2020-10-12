@@ -9,17 +9,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
 import ScreenError from './components/ScreenError/ScreenError';
 import ScreenLoading from './components/ScreenLoading/ScreenLoading';
-import ScreenHome from './components/ScreenHome/ScreenHome';
-import ScreenPost from './components/ScreenPost/ScreenPost';
+import Navigator from './components/Navigator/Navigator';
 
-
-import styles from './_app.scss';
-
-const Stack = createStackNavigator();
 import PostsContext from './components/Posts/PostsContext';
 
 // eslint-disable-next-line no-undef
@@ -87,18 +81,7 @@ const App: () => React$Node = () => {
                 }
             >
                 <NavigationContainer>
-                    <Stack.Navigator screenOptions={{
-                        headerStyle: styles['nav-header']
-                    }}>
-                        <Stack.Screen
-                            name="Posts"
-                            component={ScreenHome}
-                        />
-                        <Stack.Screen
-                            name="Post"
-                            component={ScreenPost}
-                        />
-                    </Stack.Navigator>
+                    <Navigator />
                 </NavigationContainer>
             </PostsContext.Provider>
         );
