@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correct single post, user and comments 1`] = `
+<View
+  style={
+    Array [
+      "screen",
+      "screen--trim",
+    ]
+  }
+>
+  <View
+    style="post"
+  >
+    <RCTScrollView
+      ListHeaderComponent={[Function]}
+      data={
+        Array [
+          Object {
+            "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos
+tempora quo necessitatibus
+dolor quam autem quasi
+reiciendis et nam sapiente accusantium",
+            "email": "Eliseo@gardner.biz",
+            "id": 1,
+            "name": "id labore ex et quam laborum",
+            "postId": 1,
+          },
+          Object {
+            "body": "est natus enim nihil est dolore omnis voluptatem numquam
+et omnis occaecati quod ullam at
+voluptatem error expedita pariatur
+nihil sint nostrum voluptatem reiciendis et",
+            "email": "Jayne_Kuhic@sydney.com",
+            "id": 2,
+            "name": "quo vero reiciendis velit similique earum",
+            "postId": 1,
+          },
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      onContentSizeChange={[Function]}
+      onEndReachedThreshold={2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      style="post__container"
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
+      <View>
+        <View
+          onLayout={[Function]}
+        >
+          <Text
+            style={
+              Array [
+                "headline",
+                "post__title",
+              ]
+            }
+          >
+            sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+          </Text>
+          <Text
+            style="post__author"
+          >
+            by 
+            Bret
+          </Text>
+          <Text
+            style="post__body"
+          >
+            quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto
+          </Text>
+          <Text
+            style={
+              Array [
+                "headline",
+                "headline--secondary",
+              ]
+            }
+          >
+            Comments
+          </Text>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            style="comment"
+          >
+            <Text
+              style={
+                Array [
+                  "headline",
+                  "headline--tertiary",
+                  "comment__name",
+                ]
+              }
+            >
+              id labore ex et quam laborum
+            </Text>
+            <Text>
+              laudantium enim quasi est quidem magnam voluptate ipsam eos
+tempora quo necessitatibus
+dolor quam autem quasi
+reiciendis et nam sapiente accusantium
+            </Text>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            style="comment"
+          >
+            <Text
+              style={
+                Array [
+                  "headline",
+                  "headline--tertiary",
+                  "comment__name",
+                ]
+              }
+            >
+              quo vero reiciendis velit similique earum
+            </Text>
+            <Text>
+              est natus enim nihil est dolore omnis voluptatem numquam
+et omnis occaecati quod ullam at
+voluptatem error expedita pariatur
+nihil sint nostrum voluptatem reiciendis et
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;

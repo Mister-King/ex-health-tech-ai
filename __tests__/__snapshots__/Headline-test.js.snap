@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders custom styles headline 1`] = `
+<Text
+  style={
+    Array [
+      "headline",
+    ]
+  }
+>
+  Test Custom Styles Headline
+</Text>
+`;
+
+exports[`renders default headline 1`] = `
+<Text
+  style={
+    Array [
+      "headline",
+    ]
+  }
+>
+  Test Headline
+</Text>
+`;
+
+exports[`renders secondary headline 1`] = `
+<Text
+  style={
+    Array [
+      "headline",
+      "headline--secondary",
+    ]
+  }
+>
+  Test Secondary Headline
+</Text>
+`;
