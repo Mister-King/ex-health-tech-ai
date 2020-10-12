@@ -44,3 +44,11 @@ Instead of `npm run start`, use:
 ```
 npx react-native start --reset-cache
 ```
+
+## Testing
+Basic snapshot unit tests are set up using [jest](https://jestjs.io).
+
+From a terminal in the project folder run:
+```
+npm run test
+```
