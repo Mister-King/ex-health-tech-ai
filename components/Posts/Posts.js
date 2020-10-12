@@ -13,21 +13,18 @@ const Posts = props => {
     const {
         posts,
         updateActivePost,
-        navigation
+        navigation,
     } = props;
 
     // Internal Functions
-    const renderItem = ({ item }) => {
-
-        return (
-            <PostItem
-                title={item.title}
-                id={item.id}
-                updateActivePost={updateActivePost}
-                navigation={navigation}
-            />
-        )
-    }
+    const renderItem = ({ item }) => (
+        <PostItem
+            title={item.title}
+            id={item.id}
+            updateActivePost={updateActivePost}
+            navigation={navigation}
+        />
+    );
 
     // Render
     return (

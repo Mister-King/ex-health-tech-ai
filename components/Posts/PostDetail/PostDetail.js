@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import {View, Text, FlatList} from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import Headline from '../../Headline/Headline';
 import PostComment from '../PostComment/PostComment';
 
@@ -13,7 +13,7 @@ const PostDetail = props => {
     const {
         post,
         author,
-        comments
+        comments,
     } = props;
 
     // Internal functions
@@ -22,7 +22,7 @@ const PostDetail = props => {
             name={item.name}
             comment={item.body}
         />
-    )
+    );
 
     const renderPostBody = () => (
         <>
@@ -32,7 +32,7 @@ const PostDetail = props => {
 
             <Headline type="secondary">Comments</Headline>
         </>
-    )
+    );
 
     // Render
     return (

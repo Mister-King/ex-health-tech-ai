@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const PostsContext = React.createContext();
+const PostsContext = React.createContext();
+
+export default PostsContext;

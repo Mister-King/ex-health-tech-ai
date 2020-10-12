@@ -6,28 +6,29 @@
  */
 
 module.exports = {
-  transformer: {
-    getTransformOptions: async () => ({
-      transform: {
-        experimentalImportSupport: false,
-        inlineRequires: false,
-      },
-    }),
-  },
+    transformer: {
+        getTransformOptions: async () => ({
+            transform: {
+                experimentalImportSupport: false,
+                inlineRequires: false,
+            },
+        }),
+    },
 };
 
+// eslint-disable-next-line import/no-extraneous-dependencies
 const { getDefaultConfig } = require('metro-config');
 
 module.exports = (async () => {
-  const {
-    resolver: { sourceExts },
-  } = await getDefaultConfig();
-  return {
-    transformer: {
-      babelTransformerPath: require.resolve('react-native-sass-transformer'),
-    },
-    resolver: {
-      sourceExts: [...sourceExts, "scss", "sass"],
-    },
-  };
+    const {
+        resolver: { sourceExts },
+    } = await getDefaultConfig();
+    return {
+        transformer: {
+            babelTransformerPath: require.resolve('react-native-sass-transformer'),
+        },
+        resolver: {
+            sourceExts: [...sourceExts, 'scss', 'sass'],
+        },
+    };
 })();

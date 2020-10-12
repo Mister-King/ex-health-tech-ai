@@ -7,12 +7,11 @@ import { Text, Pressable } from 'react-native';
 import styles from './_postitem.scss';
 
 const PostItem = props => {
-
     // Internal functions
     const handlePostPress = () => {
         props.updateActivePost(props.id);
         props.navigation.navigate('Post');
-    }
+    };
 
     // Render
     return (

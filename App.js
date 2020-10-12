@@ -16,21 +16,19 @@ import ScreenLoading from './components/ScreenLoading/ScreenLoading';
 import ScreenHome from './components/ScreenHome/ScreenHome';
 import ScreenPost from './components/ScreenPost/ScreenPost';
 
-import { PostsContext } from './components/Posts/PostsContext';
 
 import styles from './_app.scss';
 
 const Stack = createStackNavigator();
+import PostsContext from './components/Posts/PostsContext';
 
+// eslint-disable-next-line no-undef
 const App: () => React$Node = () => {
     // State
     const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [activePostId, setActivePostId] = useState(null);
-
-    // On mount
-    useEffect(() => { fetchData(); }, []);
 
     // Internal functions
     const fetchData = async () => {
@@ -56,16 +54,19 @@ const App: () => React$Node = () => {
             }
 
             setData({ posts, users, comments });
-        } catch (error) {
+        } catch (err) {
             setError(true);
         } finally {
             setTimeout(() => setIsLoading(false), 300);
         }
-    }
+    };
 
     const updateActivePost = id => {
         setActivePostId(id);
-    }
+    };
+
+    // On mount
+    useEffect(() => { fetchData(); }, []);
 
     // Render
     // Error screen

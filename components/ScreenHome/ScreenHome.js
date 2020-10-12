@@ -6,7 +6,7 @@ import React, { useContext } from 'react';
 
 import Screen from '../Screen/Screen';
 import Posts from '../Posts/Posts';
-import { PostsContext } from '../Posts/PostsContext';
+import PostsContext from '../Posts/PostsContext';
 
 const ScreenHome = props => {
     const context = useContext(PostsContext);
